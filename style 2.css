@@ -1,0 +1,46 @@
+body {
+   
+}
+.item {
+background-color: red;
+font-size: 30px;
+color: white;
+padding: 10px;
+border: 6px solid maroon;
+}
+.container{
+border: 10px solid black;
+display: grid;
+grid-template-columns: repeat(6, minmax(100px, 1fr));
+grid-template-rows: repeat(5, 100px);
+grid-template-areas: 
+"tl tl tc tc tc aside"
+"tl tl tc tc tc aside"
+"center center center center center aside"
+"center center center center center aside"
+"bl bc bc bc bc aside";
+grid-auto-rows: 150px;
+grid-auto-columns: 150px;
+}
+#item1 {
+    grid-area: tl;
+}
+#item2 {
+    grid-area: tc;
+}
+#item3 {
+    grid-area: aside;
+}
+#item4 {
+    grid-area: 2 / 2 / 4 / 5;
+    z-index: 1;
+}
+#item5 {
+    grid-area: center;
+}
+#item6 {
+    grid-area: bl;
+}
+#item7 {
+    grid-area: bc;
+}

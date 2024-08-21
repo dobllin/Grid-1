@@ -1,0 +1,18 @@
+.container{
+  border: 10px solid black;
+  display: grid;
+  grid-template-columns: 100px 100px 100px 100px 100px;
+  grid-template-rows: 100px 100px 100px 100px 100px;
+
+}
+
+.item{
+  background-color: red;
+}
+
+.item-1{
+  
+  grid-column: 1 / 6;
+  grid-row: 1 / 3 ;
+}
+
